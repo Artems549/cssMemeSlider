@@ -83,6 +83,10 @@ img {
 .slider__pagination-item:hover div {
     background-color: white;
 }
+.slider__pagination-item:active {
+    transform: scale(1.1)
+}
+
 
 /* Move picture */
 #slide-1:checked ~ .slider__items > .first-slide {
@@ -125,6 +129,22 @@ img {
 #slide-4:checked ~ .slider__text__pagination > .slider__pagination > .slider__pagination-item:nth-child(4) div {
     background-color: aqua
 }
+
+/* Active hover dots */
+#slide-1:checked ~ .slider__text__pagination > .slider__pagination > .slider__pagination-item:nth-child(1):hover {
+    opacity: 0.7;
+}
+#slide-2:checked ~ .slider__text__pagination > .slider__pagination > .slider__pagination-item:nth-child(2):hover {
+    opacity: 0.7;
+}
+#slide-3:checked ~ .slider__text__pagination > .slider__pagination > .slider__pagination-item:nth-child(3):hover {
+    opacity: 0.7;
+}
+#slide-4:checked ~ .slider__text__pagination > .slider__pagination > .slider__pagination-item:nth-child(4):hover {
+    opacity: 0.7;
+}
+
+
 @media all and (max-width: 758px) {
     .slider__text__pagination {
         flex-direction: column-reverse;
